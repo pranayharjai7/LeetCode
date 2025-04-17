@@ -66,4 +66,6 @@ add_executable(LeetCode main.cpp
         Problems/Stacks/Stack.h
         Problems/Stacks/ValidParenthesis.h
         Problems/Stacks/StockSpanner.h
-        Problems/Stacks/NextGreaterElement.h)
+        Problems/Stacks/NextGreaterElement.h
+        Problems/Stacks/MinStack.h
+        Problems/Stacks/LargestRectangleInHistogram.h)
