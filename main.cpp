@@ -46,6 +46,11 @@
 #include "Problems/LinkedLists/DoublyLinkedList.h"
 #include "Problems/LinkedLists/CircularLinkedList.h"
 #include "Problems/Stacks/Stack.h"
+#include "Problems/LRUCache.h"
+#include "Problems/Queues/Queue.h"
+#include "Problems/Queues/StackUsingQueues.h"
+#include "Problems/Queues/QueueUsingStacks.h"
+#include "Problems/Queues/FirstUniqueCharacterInString.h"
 
 int main() {
     TwoSum twoSum;
@@ -194,6 +199,37 @@ int main() {
 
     Stack stack;
     stack.solution();
+
+    LRUCache lRUCache(2);
+    lRUCache.put(1, 1); // cache is {1=1}
+    lRUCache.put(2, 2); // cache is {1=1, 2=2}
+    lRUCache.get(1);    // return 1
+    lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+    lRUCache.get(2);    // returns -1 (not found)
+    lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+    lRUCache.get(1);    // return -1 (not found)
+    lRUCache.get(3);    // return 3
+    lRUCache.get(4);    // return 4
+
+    Queue queue;
+    queue.push(1);
+    queue.push(2);
+    queue.push(3);
+
+    std::cout << "Queues: \n";
+    while (!queue.empty()) {
+        std::cout << queue.front() << " ";
+        queue.pop();
+    }
+
+    StackUsingQueues stackUsingQueues;
+    stackUsingQueues.solution();
+
+    QueueUsingStacks queueUsingStacks;
+    queueUsingStacks.solution();
+
+    FirstUniqueCharacterInString firstUniqueCharacterInString;
+    firstUniqueCharacterInString.solution();
 
     return 0;
 }

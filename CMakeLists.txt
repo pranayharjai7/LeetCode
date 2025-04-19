@@ -68,4 +68,11 @@ add_executable(LeetCode main.cpp
         Problems/Stacks/StockSpanner.h
         Problems/Stacks/NextGreaterElement.h
         Problems/Stacks/MinStack.h
-        Problems/Stacks/LargestRectangleInHistogram.h)
+        Problems/Stacks/LargestRectangleInHistogram.h
+        Problems/LRUCache.h
+        Problems/Queues/Queue.h
+        Problems/Queues/StackUsingQueues.h
+        Problems/Queues/QueueUsingStacks.h
+        Problems/Queues/FirstUniqueCharacterInString.h
+        Problems/Queues/SlidingWindowMaximum.h
+        Problems/Queues/GasStation.h)
