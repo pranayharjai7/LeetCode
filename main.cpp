@@ -51,6 +51,10 @@
 #include "Problems/Queues/StackUsingQueues.h"
 #include "Problems/Queues/QueueUsingStacks.h"
 #include "Problems/Queues/FirstUniqueCharacterInString.h"
+#include "Problems/Trees/HeightOfTree.h"
+#include "Problems/RelativeRanks.h"
+#include "Problems/Trees/ViewsOfTree.h"
+#include "Problems/Trees/KthLevelOfTree.h"
 
 int main() {
     TwoSum twoSum;
@@ -231,5 +235,16 @@ int main() {
     FirstUniqueCharacterInString firstUniqueCharacterInString;
     firstUniqueCharacterInString.solution();
 
+    HeightOfTree heightOfTree;
+    heightOfTree.solution();
+
+    RelativeRanks relativeRanks;
+    relativeRanks.solution();
+
+    ViewsOfTree viewsOfTree;
+    viewsOfTree.solution();
+
+    KthLevelOfTree kthLevelOfTree;
+    kthLevelOfTree.solution();
     return 0;
 }

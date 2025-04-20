@@ -75,4 +75,11 @@ add_executable(LeetCode main.cpp
         Problems/Queues/QueueUsingStacks.h
         Problems/Queues/FirstUniqueCharacterInString.h
         Problems/Queues/SlidingWindowMaximum.h
-        Problems/Queues/GasStation.h)
+        Problems/Queues/GasStation.h
+        Problems/Trees/HeightOfTree.h
+        Problems/Trees/IdenticalTree.h
+        Problems/Trees/SubtreeOfAnotherTree.h
+        Problems/RelativeRanks.h
+        Problems/Trees/DiameterOfTree.h
+        Problems/Trees/ViewsOfTree.h
+        Problems/Trees/KthLevelOfTree.h)
