@@ -7,8 +7,8 @@
 
 class CyclicDetection {
 public:
-    bool detectCycleInGraph(std::vector<std::vector<Edge>> &graph, std::vector<bool> &visited,
-                            std::vector<bool> &recursionStack, int curr) {
+    bool isCycleDirected(std::vector<std::vector<Edge>> &graph, std::vector<bool> &visited,
+                         std::vector<bool> &recursionStack, int curr) {
         visited[curr] = true;
         recursionStack[curr] = true;
 
@@ -17,7 +17,7 @@ public:
             if (recursionStack[e.dest]) { //cycle condition
                 return true;
             } else if (!visited[e.dest]) {
-                if (detectCycleInGraph(graph, visited, recursionStack, e.dest)) {
+                if (isCycleDirected(graph, visited, recursionStack, e.dest)) {
                     return true;
                 }
             }
@@ -77,16 +77,31 @@ public:
         createDirectedGraph(graph, vertices);
         std::vector<bool> visited(vertices, false);
         std::vector<bool> recursionStack(vertices, false);
-        bool ans = detectCycleInGraph(graph, visited, recursionStack, 0);
-        std::cout << "Is directed graph cyclic?: " << ans << std::endl;
+
+        for (int i = 0; i < vertices; ++i) {
+            if (!visited[i]) {
+                bool ans = isCycleDirected(graph, visited, recursionStack, i);
+                if (ans) {
+                    std::cout << "Is directed graph cyclic?: " << ans << std::endl;
+                    break;
+                }
+            }
+        }
 
         std::vector<std::vector<Edge>> graph2;
         int vertices2 = 6;
         createUndirectedGraph(graph2, vertices2);
         std::vector<bool> visited2(vertices2, false);
-        bool ans2 = isCycleUndirected(graph2, visited2, 0, -1);
-        std::cout << "Is undirected graph cyclic?: " << ans2 << std::endl;
-        //TC same as DFS O(E+V)
+
+        for (int i = 0; i < vertices2; ++i) {
+            if (!visited2[i]) {
+                bool ans2 = isCycleUndirected(graph2, visited2, i, -1); //TC same as DFS O(E+V)
+                if (ans2) {
+                    std::cout << "Is undirected graph cyclic?: " << ans2 << std::endl;
+                    break;
+                }
+            }
+        }
     }
 };
 

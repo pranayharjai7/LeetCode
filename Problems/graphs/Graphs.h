@@ -79,17 +79,6 @@ public:
         }
     }
 
-    void depthFirstTraversal(std::vector<std::vector<Edge>> &adjList, int v) {
-        std::vector<bool> visited(v, false);
-        int curr = adjList[0][0].src;
-
-        for (int i = 0; i < adjList[curr].size(); ++i) {
-
-        }
-
-
-    }
-
     void depthFirstTraversalRecursive(std::vector<std::vector<Edge>> &adjList,
                                       std::vector<bool> &visited, int curr) {
         std::cout << curr << " ";

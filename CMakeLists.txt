@@ -69,7 +69,7 @@ add_executable(LeetCode main.cpp
         Problems/Stacks/NextGreaterElement.h
         Problems/Stacks/MinStack.h
         Problems/Stacks/LargestRectangleInHistogram.h
-        Problems/LRUCache.h
+        Problems/LinkedLists/LRUCache.h
         Problems/Queues/Queue.h
         Problems/Queues/StackUsingQueues.h
         Problems/Queues/QueueUsingStacks.h
@@ -82,4 +82,11 @@ add_executable(LeetCode main.cpp
         Problems/RelativeRanks.h
         Problems/Trees/DiameterOfTree.h
         Problems/Trees/ViewsOfTree.h
-        Problems/Trees/KthLevelOfTree.h)
+        Problems/Trees/KthLevelOfTree.h
+        Problems/graphs/EventualSafeStates.h
+        Problems/FirstMissingNonNegativeNumber.h
+        Problems/MaxPeopleInOffice.h
+        Problems/MinimumUnsortedSubarray.h
+        Problems/HospitalAndPatients.h
+        Problems/Trees/FindKeysInInterval.h
+        Problems/ReachTheEnd.h)

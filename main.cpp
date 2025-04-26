@@ -46,7 +46,7 @@
 #include "Problems/LinkedLists/DoublyLinkedList.h"
 #include "Problems/LinkedLists/CircularLinkedList.h"
 #include "Problems/Stacks/Stack.h"
-#include "Problems/LRUCache.h"
+#include "Problems/LinkedLists/LRUCache.h"
 #include "Problems/Queues/Queue.h"
 #include "Problems/Queues/StackUsingQueues.h"
 #include "Problems/Queues/QueueUsingStacks.h"
@@ -55,6 +55,9 @@
 #include "Problems/RelativeRanks.h"
 #include "Problems/Trees/ViewsOfTree.h"
 #include "Problems/Trees/KthLevelOfTree.h"
+#include "Problems/graphs/EventualSafeStates.h"
+#include "Problems/ReachTheEnd.h"
+#include "Problems/Trees/FindKeysInInterval.h"
 
 int main() {
     TwoSum twoSum;
@@ -246,5 +249,14 @@ int main() {
 
     KthLevelOfTree kthLevelOfTree;
     kthLevelOfTree.solution();
+
+    EventualSafeStates eventualSafeStates;
+    eventualSafeStates.solution();
+
+    ReachTheEnd reachTheEnd;
+    reachTheEnd.solution();
+
+    FindKeysInInterval findKeysInInterval;
+    findKeysInInterval.solution();
     return 0;
 }

@@ -38,7 +38,9 @@ public:
     }
 
     void solution() {
-        std::vector<std::vector<int>> grid = {{9,1,7},{8,9,2},{3,4,6}};
+        std::vector<std::vector<int>> grid = {{9,1,7},
+                                              {8,9,2},
+                                              {3,4,6}};
         std::vector<int> ans = findMissingAndRepeatedValues(grid);
         std::cout << "Repeated value in grid: " << ans[0] << ", missing value: " << ans[1] << std::endl;
     }

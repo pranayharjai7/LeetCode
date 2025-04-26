@@ -41,7 +41,7 @@ public:
     void solution() {
         //Pivot and Partition
         // TC (avg.) = O(nlogn)
-        // TC (worst) = O(n^2) => when Pivot is repeatedly the smallest element of the largest element of array
+        // TC (worst) = O(n^2) => when Pivot is repeatedly the smallest element or the largest element of array
         // SC = O(1) ignoring the space occupied by call stack of recursion
         // SC (avg) = O(logn) if not ignoring the call stack
         // SC (worst) = O(n) the recursion stack will be as deep as "n" and will sort 1 element at a time, giving TC = O(n^2)
