@@ -5,13 +5,6 @@
 #include <iostream>
 #include <queue>
 
-//struct Node {
-//    int value;
-//    Node *left;
-//    Node *right;
-//
-//    explicit Node(int key) : value(key), left(nullptr), right(nullptr) {}
-//};
 struct TreeNode {
     int val;
     TreeNode *left;

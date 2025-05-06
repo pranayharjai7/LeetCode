@@ -58,6 +58,9 @@
 #include "Problems/graphs/EventualSafeStates.h"
 #include "Problems/ReachTheEnd.h"
 #include "Problems/Trees/FindKeysInInterval.h"
+#include "Problems/MinimumStrokesOfPaint.h"
+#include "Problems/HouseRobber.h"
+#include "Problems/graphs/TheMaze.h"
 
 int main() {
     TwoSum twoSum;
@@ -258,5 +261,14 @@ int main() {
 
     FindKeysInInterval findKeysInInterval;
     findKeysInInterval.solution();
+
+    MinimumStrokesOfPaint minimumStrokesOfPaint;
+    minimumStrokesOfPaint.solution();
+
+    HouseRobber houseRobber;
+    houseRobber.solution();
+
+    TheMaze theMaze;
+    theMaze.solution();
     return 0;
 }

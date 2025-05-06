@@ -29,7 +29,7 @@ public:
             nextJump.second >= n || grid[nextJump.first][nextJump.second] != count + 1) {
                 continue;
             }
-            return gridCheckRec(grid, nextJump.first, nextJump.second, ++count);
+            return gridCheckRec(grid, nextJump.first, nextJump.second, count + 1);
         }
 
         return false;

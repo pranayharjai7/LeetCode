@@ -89,4 +89,10 @@ add_executable(LeetCode main.cpp
         Problems/MinimumUnsortedSubarray.h
         Problems/HospitalAndPatients.h
         Problems/Trees/FindKeysInInterval.h
-        Problems/ReachTheEnd.h)
+        Problems/ReachTheEnd.h
+        Problems/MinimumStrokesOfPaint.h
+        Problems/FourWinningHands.h
+        Problems/HouseRobber.h
+        Problems/graphs/TheMaze.h
+        Problems/ExtraCharInString.h
+        Problems/PushDominoes.h)
