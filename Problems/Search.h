@@ -43,10 +43,11 @@ public:
         int first = 0;
         int last = sortedVec.size()-1;
         while (first <= last) {
-            int mid = first+((last-first)/2); // to escape overflow
+            int mid = first+(last-first)/2; // to escape overflow
             if (sortedVec.at(mid) == searchElement) {
                 return mid;
-            } else if (sortedVec.at(mid) > searchElement) {
+            }
+            if (sortedVec.at(mid) > searchElement) {
                 last = mid - 1;
             } else {
                 first = mid + 1;
