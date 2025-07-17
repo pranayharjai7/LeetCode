@@ -22,10 +22,11 @@ public:
 
     int peakIndexInMountainArrayOptimized(std::vector<int> &arr) {
         int i = 1;
-        for (; i < arr.size() - 1; ++i) {
+        while (i < arr.size() - 1) {
             if ((arr[i - 1] < arr[i]) && (arr[i] > arr[i + 1])) { // peak element is always greater than left and right element.
                 return i;
             }
+            i++;
         }
         return i;
     }

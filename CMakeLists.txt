@@ -95,4 +95,8 @@ add_executable(LeetCode main.cpp
         Problems/HouseRobber.h
         Problems/graphs/TheMaze.h
         Problems/ExtraCharInString.h
-        Problems/PushDominoes.h)
+        Problems/PushDominoes.h
+        Revision/VectorRevision.h
+        Revision/StringRevision.h
+        Revision/SearchAndSort.h
+)

@@ -61,6 +61,9 @@
 #include "Problems/MinimumStrokesOfPaint.h"
 #include "Problems/HouseRobber.h"
 #include "Problems/graphs/TheMaze.h"
+#include "Revision/SearchAndSort.h"
+#include "Revision/StringRevision.h"
+#include "Revision/VectorRevision.h"
 
 int main() {
     TwoSum twoSum;
@@ -270,5 +273,13 @@ int main() {
 
     TheMaze theMaze;
     theMaze.solution();
-    return 0;
+
+    VectorRevision vectorRevision;
+    vectorRevision.solution();
+
+    StringRevision stringRevision;
+    stringRevision.solution();
+
+    SearchAndSort searchAndSort;
+    searchAndSort.solution();    return 0;
 }
