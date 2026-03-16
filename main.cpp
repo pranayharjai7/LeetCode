@@ -277,9 +277,11 @@ int main() {
     VectorRevision vectorRevision;
     vectorRevision.solution();
 
+    SearchAndSort searchAndSort;
+    searchAndSort.solution();
+
     StringRevision stringRevision;
     stringRevision.solution();
 
-    SearchAndSort searchAndSort;
-    searchAndSort.solution();    return 0;
+    return 0;
 }
